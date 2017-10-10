@@ -51,11 +51,19 @@ li a {
 
 
 
-.bottomHeader a { 
+.bottomHeader p { 
     display: inline-block;
     color: white;
     font-size: 2em;
     margin: 0 1em;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+
+.topHeader .container #nav { 
+    float: right;
+    background: transparent;
+    box-shadow: none;
+    width: auto;
 }

@@ -1,2 +1,2 @@
-<app-loc-pickup></app-loc-pickup>
-<app-loc-deliver></app-loc-deliver>
+<app-loc-deliver *ngIf = "locationMode === 1"></app-loc-deliver>
+<app-loc-pickup *ngIf = "locationMode === 0"></app-loc-pickup>

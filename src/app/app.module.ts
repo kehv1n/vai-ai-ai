@@ -9,8 +9,12 @@ import { LocationComponent } from './location/location.component';
 import { DateComponent } from './date/date.component';
 import { LocDeliverComponent } from './loc-deliver/loc-deliver.component';
 import { LocPickupComponent } from './loc-pickup/loc-pickup.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { ModeService } from './services/mode.service';
+import { MaterializeModule } from 'angular2-materialize';
+import { CalendarComponent } from './loc-pickup/calendar/calendar.component';
+
 
 
 @NgModule({
@@ -21,13 +25,17 @@ import { ModeService } from './services/mode.service';
     LocationComponent,
     DateComponent,
     LocDeliverComponent,
-    LocPickupComponent
+    LocPickupComponent,
+    CalendarComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterializeModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [ModeService],
+  providers: [ModeService, NavigationBarComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
